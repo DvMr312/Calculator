@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(124, 124, 124);
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+:root {
+    --background-color: #efe7e5;
+    --text-color: rgb(0, 0, 0);
+}
+.calculatrice {
+    background-color: var(--background-color);
+    max-inline-size: 21rem; 
+    height: 35rem;
+    border-radius: 10px; 
+    overflow: hidden; 
+    padding: 17px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.652), 0px 2px 4px 0px rgba(0, 0, 0, 0.611); 
+}
+.output {
+    height: 8rem;
+    overflow: hidden;
+    font-size: 2rem;
+    text-align: end;
+    background: hsla(203, 53%, 46%, 0.266); 
+    color: var(--text-color);
+    font-size: 20px; 
+    padding-block-start: 0.25rem; 
+    padding-block-end: 0.25rem; 
+    padding-inline-end: 0.75rem;
+    border-radius: 10px;
+}
+.touches {
+    height: 24rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--background-color);
+    grid-gap: 1px;
+}
+.bouton {
+  padding-block-start: 0.5rem; 
+  padding-block-end: 0.5rem; 
+  padding-inline-start: 1.25rem; 
+  padding-inline-end: 1.25rem; 
+  font-size: 1.5rem;
+  inline-size: 60px;
+  block-size: 60px;
+  border-radius: 40px;
+  margin: 0.25rem;
+  border-color: rgba(0, 0, 255, 0.307);
+}
+bouton:active {
+    box-shadow: 0 2px #a8a8a8;
+    transform: translateY(2px);
+  }
+  
+  bouton[data-key="8"] {
+    background-color: #ffffff;
+  }
+  
+  bouton[data-key="13"] {
+    grid-column: span 2;
+    background-color: #ffffff;
+  }
+#dark-light-mode{
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 3%;
+}
