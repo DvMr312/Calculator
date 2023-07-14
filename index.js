@@ -19,16 +19,16 @@ const calculer = (valeur) => {
     if (listeKeycode.includes(valeur)) {
         switch (valeur) {
             case '8':
-                ecran.textContent = "";
+                output.textContent = "";
                 break;
             case '13':
-                const calcul = eval(ecran.textContent);
-                ecran.textContent = calcul;
+                const calcul = eval(output.textContent);
+                output.textContent = calcul;
                 break;
             default:
                 const indexKeycode = listeKeycode.indexOf(valeur);
                 const touche = touches[indexKeycode];
-                ecran.textContent += touche.innerHTML;
+                output.textContent += touche.innerHTML;
         }
     }
 }
