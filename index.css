@@ -16,7 +16,7 @@ body{
     padding: 17px;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.652), 0px 2px 4px 0px rgba(0, 0, 0, 0.611); 
 }
-.output {
+.ecran {
     height: 8rem;
     overflow: hidden;
     font-size: 2rem;
