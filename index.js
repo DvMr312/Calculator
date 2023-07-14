@@ -1,7 +1,6 @@
-// DOM
 const touches = [...document.querySelectorAll('.bouton')];
 const listeKeycode = touches.map(touche => touche.dataset.key);
-const output = document.querySelector('.output');
+const ecran = document.querySelector('.ecran');
 
 document.addEventListener('keydown', (e) => {
     const valeur = e.keyCode.toString();
@@ -19,16 +18,16 @@ const calculer = (valeur) => {
     if (listeKeycode.includes(valeur)) {
         switch (valeur) {
             case '8':
-                output.textContent = "";
+                ecran.textContent = "";
                 break;
             case '13':
-                const calcul = eval(output.textContent);
-                output.textContent = calcul;
+                const calcul = eval(ecran.textContent);
+                ecran.textContent = calcul;
                 break;
             default:
                 const indexKeycode = listeKeycode.indexOf(valeur);
                 const touche = touches[indexKeycode];
-                output.textContent += touche.innerHTML;
+                ecran.textContent += touche.innerHTML;
         }
     }
 }
